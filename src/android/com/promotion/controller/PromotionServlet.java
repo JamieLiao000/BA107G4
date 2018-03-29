@@ -32,6 +32,8 @@ public class PromotionServlet extends HttpServlet {
 		
 		String action = req.getParameter("action");
 		
+		
+		
 		System.out.println(action);
 		
 		int imageSize = Integer.parseInt(req.getParameter("imageSize"));
