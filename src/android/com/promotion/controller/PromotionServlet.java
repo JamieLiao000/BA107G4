@@ -29,8 +29,11 @@ public class PromotionServlet extends HttpServlet {
 //		PromotionDAO_interface dao = new PromotionDAO();
 		Gson gson = new Gson();
 
+		
 		String action = req.getParameter("action");
+		
 		System.out.println(action);
+		
 		int imageSize = Integer.parseInt(req.getParameter("imageSize"));
 		if ("getAll".equals(action)) {
 			proSvc= new PromotionService();
